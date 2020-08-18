@@ -9,7 +9,8 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.tsx?$/, loader: 'ts-loader' }
+            { test: /\.tsx?$/, loader: 'ts-loader' },
+            { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] }
         ]
     }
 }
